@@ -1,25 +1,23 @@
 program zadanie1;
-
 {$mode objfpc}{$H+}
 
 type
     TIntArray = array of integer;
 
-procedure Random50;
+procedure RandomNumbers(start, stop, count : integer; out arr : TIntArray; display : Boolean = False);
 var
     i : integer;
 
 begin
-    Randomize;
+    SetLength(arr, count);
+    if display then writeln(count, ' losowych liczb: ');
 
-    writeln('50 losowych liczb: ');
-
-    for i := 1 to 50 do
+    for i := 0 to count - 1 do
     begin 
-        writeln(Random(101));
+        arr[i] := Random(stop - start + 1) + start;
+        if display then write(arr[i], ' ');
     end;
-
-    writeln;
+    if display then writeln;
 end;
 
 procedure BubbleSort(var arr : TIntArray);
