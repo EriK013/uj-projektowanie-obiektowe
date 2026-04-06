@@ -3,7 +3,7 @@ Zadanie 3 Wzorce kreacyjne
 ✅ 3.0 Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z
 listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot [Link do commita 1][1]
 
-❌ 3.5 Należy stworzyć klasę do autoryzacji (mock) jako Singleton w
+✅ 3.5 Należy stworzyć klasę do autoryzacji (mock) jako Singleton w
 formie eager
 
 ❌ 4.0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika
