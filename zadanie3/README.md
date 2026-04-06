@@ -8,7 +8,7 @@ formie eager [Link do commita 2][2]
 
 ✅ 4.0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika [Link do commita 3][3]
 
-❌ 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired lub
+✅ 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired lub
 kontruktor (constructor injection)
 
 ❌ 5.0 Obok wersji Eager do wyboru powinna być wersja Singletona w wersji

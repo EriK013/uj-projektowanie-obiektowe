@@ -8,10 +8,8 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("/api")
 
-class UserController {
+class UserController(private val authorization: Authorization) {
 
-    private val authorization = Authorization()
-    
     private val users = listOf(
         User(1, "Test1"),
         User(2, "Test2"),
