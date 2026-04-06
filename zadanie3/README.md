@@ -9,7 +9,7 @@ formie eager [Link do commita 2][2]
 ✅ 4.0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika [Link do commita 3][3]
 
 ✅ 4.5 Należy wstrzyknąć singleton do głównej klasy via @Autowired lub
-kontruktor (constructor injection)
+kontruktor (constructor injection) [Link do commita 4][4]
 
 ❌ 5.0 Obok wersji Eager do wyboru powinna być wersja Singletona w wersji
 lazy
@@ -17,3 +17,4 @@ lazy
 [1]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/b4f74a08d0730b7e568c7d4416ba73c3291e567e
 [2]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/e047ebba9f8c7b941dd68b3dfd422549d8523b82
 [3]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/a02e3f9808b59880920a00fe8449ce4259b0c9f8
+[4]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/1e140d1f1f816b0133168ac748ee9df8dcc5ffbf
