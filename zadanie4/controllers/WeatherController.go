@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"io"
 	"encoding/json"
+	"zadanie4/database"
+	"zadanie4/models"
 	"github.com/labstack/echo/v4"
 )
 
@@ -44,4 +46,10 @@ func GetWeather(c echo.Context) error {
     }
 
     return c.JSON(http.StatusOK, meteoData)
+}
+
+func GetWeatherDB(c echo.Context) error {
+	var weather []models.Weather
+	database.DB.Find(&weather)
+    return c.JSON(http.StatusOK, weather)
 }
