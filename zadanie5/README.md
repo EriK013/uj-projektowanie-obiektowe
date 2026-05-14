@@ -5,7 +5,7 @@ Płatności; komponent Produkty powinien pobierać listę produktów z
 aplikacji serwerowej, natomiast komponent Płatności powinien wysyłać
 dane płatności do aplikacji serwerowej.
 
-❌ 3.5 Należy dodać komponent Koszyk wraz z osobnym widokiem; aplikacja powinna umożliwiać przechodzenie pomiędzy widokami przy użyciu routingu.
+✅ 3.5 Należy dodać komponent Koszyk wraz z osobnym widokiem; aplikacja powinna umożliwiać przechodzenie pomiędzy widokami przy użyciu routingu.
 
 ❌ 4.0 Dane pomiędzy komponentami, takimi jak Produkty, Koszyk i
 Płatności, powinny być przekazywane z wykorzystaniem React hooks, np. useState, useEffect lub useContext.
