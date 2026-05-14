@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { CartContext } from '../App';
 
 function Products() {
   const [products, setProducts] = useState([]);
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     fetch('http://localhost:8080/products')
@@ -15,7 +17,10 @@ function Products() {
       <h2>Nasze Produkty</h2>
       <ul>
         {products.map(p => (
-          <li key={p.id}>{p.name} - {p.price} PLN</li>
+          <li key={p.id}>
+            {p.name} - {p.price} PLN
+            <button onClick={() => addToCart(p)}>Dodaj do koszyka</button>
+          </li>
         ))}
       </ul>
     </div>
