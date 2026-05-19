@@ -1,0 +1,1 @@
+cd "$(git rev-parse --show-toplevel)/zadanie6/client" && npx lint-staged
