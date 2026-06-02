@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/64c5b68c-7a84-4706-b27e-35f70de487c8
+
 Zadanie 3 Wzorce kreacyjne
 
 ✅ 3.0 Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z
