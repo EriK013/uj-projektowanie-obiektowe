@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/08cc50aa-84db-45d0-9595-29fccdebdaa7
+
 Zadanie 4 Wzorce strukturalne
 
 ✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
