@@ -1,0 +1,16 @@
+services:
+  server:
+    build:
+      context: ../zadanie6/server
+      dockerfile: ../../zadanie9/server.Dockerfile
+    ports:
+      - "8080:8080"
+
+  client:
+    build:
+      context: ../zadanie6/client
+      dockerfile: ../../zadanie9/client.Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
