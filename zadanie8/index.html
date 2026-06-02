@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const { useState } = React;
+
+      const FIELDS = [
+        { name: "username", label: "Username", type: "text" },
+        { name: "email", label: "Email", type: "email" },
+        { name: "password", label: "Password", type: "password" },
+      ];
+
+      const isEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+
+      function checkForm(data) {
+        const problems = {};
+
+        if (!data.username.trim()) problems.username = "Username is required";
+
+        if (!data.email.trim()) problems.email = "Email is required";
+        else if (!isEmail(data.email)) problems.email = "Invalid email format";
+
+        if (!data.password) problems.password = "Password is required";
+        else if (data.password.length < 6)
+          problems.password = "Password must be at least 6 characters long";
+
+        return problems;
+      }
+
+      function RegisterForm() {
+        const [data, setData] = useState({ username: "", email: "", password: "" });
+        const [problems, setProblems] = useState({});
+        const [done, setDone] = useState(false);
+
+        function update(name, value) {
+          setData((prev) => ({ ...prev, [name]: value }));
+        }
+
+        function onSubmit(e) {
+          e.preventDefault();
+          const found = checkForm(data);
+          setProblems(found);
+          setDone(Object.keys(found).length === 0);
+        }
+
+        return (
+          <div>
+            <h2>Registration</h2>
+            <form onSubmit={onSubmit} noValidate>
+              {FIELDS.map((f) => (
+                <div key={f.name}>
+                  <label htmlFor={f.name}>{f.label}</label>
+                  <input
+                    id={f.name}
+                    type={f.type}
+                    value={data[f.name]}
+                    onChange={(e) => update(f.name, e.target.value)}
+                  />
+                  {problems[f.name] && (
+                    <div data-testid={`error-${f.name}`}>
+                      {problems[f.name]}
+                    </div>
+                  )}
+                </div>
+              ))}
+              <button id="submit" type="submit">Register</button>
+            </form>
+
+            {done && (
+              <p data-testid="register-success">
+                Registration successful!
+              </p>
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<RegisterForm />);
+    </script>
+  </body>
+</html>
