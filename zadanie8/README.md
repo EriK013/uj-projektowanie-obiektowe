@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/7a299847-61e0-497d-b45d-a9b5a44d48f5
+
 Zadanie 8
 
 ✅  3.0 Przetestuj formularz rejestracji użytkownika pod kątem walidacji
