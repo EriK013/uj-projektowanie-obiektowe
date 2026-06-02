@@ -1,3 +1,8 @@
+
+
+https://github.com/user-attachments/assets/634dda74-17e0-4366-a37a-9eaa94b19f14
+
+
 Zadanie 1  Paradygmaty
 
 ✅ 3.0 Procedura do generowania 50 losowych liczb od 0 do 100 [Link do commita 1][1]
