@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/812a3e8f-81f7-4b8f-a806-08ab25d3e702
+
 Zadanie 5 Wzorce behawioralne
 
 ✅ 3.0 W ramach projektu należy stworzyć komponenty Produkty oraz
