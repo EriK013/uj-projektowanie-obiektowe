@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/8a43f166-97de-47ee-99a3-456c14b9d9e3
+
 Zadanie 2  Wzorce architektury
 Symfony (PHP)
 
