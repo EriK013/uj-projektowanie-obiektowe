@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/27e79c3f-db14-4d75-8452-166c303cb2a2
+
 Zadanie 7
 
 ✅ 3.0 Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w
