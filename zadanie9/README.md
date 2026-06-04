@@ -6,7 +6,7 @@ Zadanie 9
 
 
 ✅ 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na
-dockerze
+dockerze [Link do commita][1]
 
 ❌ 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania
 aplikacji
@@ -18,3 +18,5 @@ chmurę
 
 ❌ 5.0 Dodać uruchomienie regresyjnych testów automatycznych
 (funkcjonalnych) jako krok w Actions
+
+[1]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/ca40b7369ffc3edf293535924da63b1bd91b8425
