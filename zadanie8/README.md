@@ -6,7 +6,7 @@ Zadanie 8
 
 ✅  3.0 Przetestuj formularz rejestracji użytkownika pod kątem walidacji
 pól obowiązkowych oraz zachowania aplikacji po wprowadzeniu
-niepoprawnego formatu adresu e-mail.
+niepoprawnego formatu adresu e-mail. [Link do commita][1]
 
 ❌ 3.5 Przeprowadź testy bezpieczeństwa typu Cross-Site Scripting (XSS),
 próbując wstrzyknąć złośliwy kod JavaScript w aplikacji z Reactem
@@ -22,3 +22,5 @@ spreparowanym linkiem, podczas gdy użytkownik posiada aktywną sesję w
 innej karcie.
 
 ❌  5.0 Stwórz scenariusz End-to-End w Playwright (minimum 50 asercji)
+
+[1]: https://github.com/EriK013/uj-projektowanie-obiektowe/commit/8447f274e2ec83eb37904edbeb42f4eecc33cd5c
